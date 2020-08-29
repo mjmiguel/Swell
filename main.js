@@ -611,7 +611,7 @@ ipcMain.on("open-gql", (event, args) => {
         });
     }
   } catch (e) {
-    console.log('error trying gql query/mutation in main.js');
+    console.log('error trying gql query/mutation in main.js!');
   }
   
 });
