@@ -5,7 +5,7 @@
   "main": "main.js",
   "repository": "https://github.com/open-source-labs/Swell",
   "scripts": {
-    "test": "nothing-yet",
+    "test": "npm test-mocha",
     "test-jest": "jest",
     "test-mocha": "webpack --mode=production --config ./webpack.production.js && cross-env process.env.NODE_ENV=test mocha",
     "build": "webpack --mode=production --config ./webpack.production.js",
@@ -175,12 +175,7 @@
           "y": 220,
           "type": "link",
           "path": "/Applications"
-        }
-      ]
-    },
-    "win": {
-      "target": "nsis",
-      "icon": "icon.ico"
+        }all test suites matching /main/i.
     },
     "linux": {
       "target": [
