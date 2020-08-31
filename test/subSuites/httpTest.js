@@ -80,7 +80,7 @@ module.exports = () => {
     describe("local API", () => {
       before("CLEAR DB", (done) => {
         chai
-          .request("http://localhost:3000")
+          .request("mongodb://localhost/mydb")
           .get("/clear")
           .end((err, res) => {
             done();
@@ -99,7 +99,7 @@ module.exports = () => {
       it("it should GET from local API", async () => {
         try {
           await sideBar.chooseGet.click();
-          await urlAndClick("http://localhost:3000/book", "GET");
+          await urlAndClick("mongodb://localhost/mydb/book", "GET");
           await new Promise((resolve) =>
             setTimeout(async () => {
               try {

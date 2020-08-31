@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 require("dotenv").config();
 
+const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost/mydb"
+
 mongoose.connect(process.env.MONGO_URI, {
   // options for the connect method to parse the URI
   useNewUrlParser: true,
